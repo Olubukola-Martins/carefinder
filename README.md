@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Carefinder
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+Accessing healthcare in Nigeria can be a challenging task. CareFinder is a search engine for hospitals, currently available exclusively in Nigeria. It aims to provide users with a convenient and efficient way to find hospitals within their region and access essential information about them. This repository contains the source code for Carefinder, along with documentation on how to set it up and contribute to its development.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+![p1](https://github.com/Jennydunix/carefinder/assets/88034429/739e2084-55b9-4404-8719-abebf4a12cb2)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+Hospital Search: Users can search for hospitals within their region by location or selecting from a list of nearby cities. The platform provides a list of hospitals with contact details such as address, phone number, and email.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Export Hospitals: Users can export the list of hospitals to a CSV file for easy storage and sharing of information.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Share Hospitals: The platform allows users to share the list of hospitals via email or by generating a shareable link.
 
-## Learn More
+User Authentication: Admin users can create an account to access the platform's admin features. User authentication is implemented using Firebase's authentication feature, supporting multiple authentication methods.
+![a1](https://github.com/Jennydunix/carefinder/assets/88034429/00b810ea-6d49-4f64-a3ad-40853c8a71cf)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Markdown Support: Admin users can write content using markdown syntax, enabling easy formatting, adding links, and inserting images.
+![b3](https://github.com/Jennydunix/carefinder/assets/88034429/e1061af9-b3af-4e80-8423-d9b498ad83be)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Frontend: React, TypeScript
+Backend: Firebase (for authentication), MongoDB (for database, and file storage)
+Additional Tools: Prettier, ESLint, Jest, React Testing Library
+
+## Installation
+
+To run Carefinder locally, follow these steps:
+
+1. Clone the repository: git clone https://github.com/your-username/carefinder.git
+2. Install dependencies: npm install
+3. Set up Firebase project:
+4. Create a new Firebase project on the Firebase Console.
+5. Set up Firebase Authentication and Firestore database.
+6. Obtain the Firebase configuration details.
+7. Set up MongoDB:
+8. Install MongoDB and set up a local or remote MongoDB database.
+9. Obtain the MongoDB connection details.
+10. Configure the environment:
+11. Create a .env file based on the provided .env.example file.
+12. Fill in the required environment variables, including Firebase and MongoDB configuration details.
+13. Start the development server: npm run dev
+
+## Deployment
+Carefinder can be easily deployed to Vercel. To deploy the project, follow these steps:
+
+Create an account on Vercel (https://vercel.com) if you don't have one.
+Install the Vercel CLI globally: npm install -g vercel
+Log in to your Vercel account using the CLI: vercel login
+Deploy the project: vercel
+Follow the prompts from the CLI to configure the deployment settings.
+Once the deployment is complete, you will receive a URL where your Carefinder application is hosted.
+
+Here's the link to hosted application on vercel: https://carefinder-zeta.vercel.app/
+
