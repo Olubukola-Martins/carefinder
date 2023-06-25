@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Accessing healthcare in Nigeria can be a challenging task. Carefinder is a simple tool designed to assist users in finding, exporting, and sharing information about hospitals within their region. This repository contains the source code for Carefinder, along with documentation on how to set it up and contribute to its development.
+Accessing healthcare in Nigeria can be a challenging task. CareFinder is a search engine for hospitals, currently available exclusively in Nigeria. It aims to provide users with a convenient and efficient way to find hospitals within their region and access essential information about them. This repository contains the source code for Carefinder, along with documentation on how to set it up and contribute to its development.
 
 ![p1](https://github.com/Jennydunix/carefinder/assets/88034429/739e2084-55b9-4404-8719-abebf4a12cb2)
 
