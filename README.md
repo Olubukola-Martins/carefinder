@@ -56,3 +56,5 @@ Deploy the project: vercel
 Follow the prompts from the CLI to configure the deployment settings.
 Once the deployment is complete, you will receive a URL where your Carefinder application is hosted.
 
+Here's the link to hosted application on vercel: https://carefinder-zeta.vercel.app/
+
