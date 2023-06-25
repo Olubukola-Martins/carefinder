@@ -68,7 +68,7 @@ const Form = () => {
       } catch (error: any) {
         showToastMessage("error", error.message);
       } finally {
-        // Enable submitting of form again
+        // Enable the submission of form again
         actions.setSubmitting(false);
       }
     },
@@ -84,7 +84,7 @@ const Form = () => {
           label="Email"
           type="text"
           invalid={formik.errors.email && formik.touched.email ? true : false}
-          placeholder="example@name.com"
+          placeholder="Enter your email address"
           value={formik.values.email}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -102,7 +102,7 @@ const Form = () => {
           invalid={
             formik.errors.password && formik.touched.password ? true : false
           }
-          placeholder="e.g, Password@1234"
+          placeholder="Enter your password"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.password}

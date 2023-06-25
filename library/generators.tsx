@@ -3,7 +3,7 @@ import { allStates } from "./states";
 const generateCountryForSelectField = () => {
   return [
     { label: "Nigeria", value: "Nigeria" },
-    { label: "Kenya", value: "Kenya" },
+    { label: "Uganda", value: "Uganda" },
   ];
 };
 

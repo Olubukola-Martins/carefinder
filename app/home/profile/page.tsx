@@ -2,6 +2,7 @@
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import React from "react";
+import profile from "../../../public/images/profile.png";
 
 const Profile = () => {
   const { data: session } = useSession();
@@ -10,7 +11,7 @@ const Profile = () => {
     <section className="flex items-center justify-between w-[60%] mt-24 mx-auto max-lg:flex-col">
       <div className="basis-[45%] bg-secondary_light_color max-lg:mb-4">
         <Image
-          src="/images/profile.png"
+          src={profile}
           alt={email || ""}
           width={1000}
           height={300}

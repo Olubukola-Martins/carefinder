@@ -71,8 +71,8 @@ const createHospital = async (data: Hospitalparams) => {
 
 const AddHospitalForm = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [progressPercent, setProgressPercent] = useState(0);
-  const [uploading, setUploading] = useState(false);
+  const [progressPercent, setProgressPercent] = useState<number>(0);
+  const [uploading, setUploading] = useState<boolean>(false);
   const [markDownContent, setMarkDowContent] = useState<string>("");
   const router = useRouter();
 

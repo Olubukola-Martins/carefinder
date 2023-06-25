@@ -62,7 +62,6 @@ const SignUpForm = () => {
     confirmPassword: Yup.string()
       .required("Confirm Password is required")
       .oneOf([Yup.ref("password"), ""], "Confirm Password does not match"),
-    // acceptTerms: Yup.bool().oneOf([true], "Accept Terms is required"),
   });
   const formik = useFormik({
     initialValues: {
@@ -147,7 +146,7 @@ const SignUpForm = () => {
           type="email"
           name="email"
           invalid={formik.errors.email && formik.touched.email ? true : false}
-          placeholder="example@email.com"
+          placeholder="Enter your email address"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.email}
@@ -174,7 +173,7 @@ const SignUpForm = () => {
           invalid={
             formik.errors.password && formik.touched.password ? true : false
           }
-          placeholder="e.g, Password@1234"
+          placeholder="Enter your password"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.password}
@@ -200,7 +199,7 @@ const SignUpForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.confirmPassword}
-          placeholder="e.g, Password@1234"
+          placeholder="Enter your password"
           passwordIcon={passwordIcon}
           showPassword={showConfirmPassword}
           setShowPassword={setShowConfirmPassword}

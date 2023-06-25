@@ -6,13 +6,14 @@ import Button from "../../UI/Button/Button";
 import CustomNavLink from "../../UI/CustomNavLink";
 import classes from "./LandingHeader.module.css";
 import Link from "next/link";
+import logo from "../../../public/images/logo.png";
 const LandingNavigation: React.FC = () => {
   const router = useRouter();
   return (
     <header className={classes.header} id="header">
       <Link href="/" className="cursor-pointer">
         <Image
-          src="/images/logo.png"
+          src={logo}
           alt="Logo"
           width={80}
           height={80}

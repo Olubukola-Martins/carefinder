@@ -7,6 +7,7 @@ import React, { useContext } from "react";
 import { AppContext } from "@/store/AppContext";
 import { signOut, useSession } from "next-auth/react";
 import Button from "../UI/Button/Button";
+import logo from "../../public/images/logo.png"
 
 const Header: React.FC = () => {
   const router = useRouter();
@@ -28,7 +29,7 @@ const Header: React.FC = () => {
     <header className="header" id="home__header">
       <div className="" onClick={goToHome} id="header__logo">
         <Image
-          src="/images/logo.png"
+          src={logo}
           alt="Logo"
           width={80}
           height={80}

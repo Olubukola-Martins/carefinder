@@ -2,7 +2,9 @@ import React from "react";
 import classes from "./RightAligned.module.css";
 import Button from "../../UI/Button/Button";
 import { useRouter } from "next/navigation";
+import logo from "../../../public/images/logo.png";
 import Image from "next/image";
+
 
 const RightAligned = () => {
   const router = useRouter();
@@ -14,7 +16,7 @@ const RightAligned = () => {
     <li className={classes.rightaligned} id="right__aligned">
       <figure className={classes.left}>
         <Image
-          src="/images/logo.png"
+          src={logo}
           alt="Header Image"
           width={700}
           height={700}
