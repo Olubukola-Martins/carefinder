@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./RightAligned.module.css";
 import Button from "../../UI/Button/Button";
 import { useRouter } from "next/navigation";
-import logo from "../../../public/images/logo.png";
+import logo from "../../../public/images/logo.jpg";
 import Image from "next/image";
 
 

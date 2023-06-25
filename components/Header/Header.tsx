@@ -7,7 +7,7 @@ import React, { useContext } from "react";
 import { AppContext } from "@/store/AppContext";
 import { signOut, useSession } from "next-auth/react";
 import Button from "../UI/Button/Button";
-import logo from "../../public/images/logo.png"
+import logo from "../../public/images/logo.jpg"
 
 const Header: React.FC = () => {
   const router = useRouter();

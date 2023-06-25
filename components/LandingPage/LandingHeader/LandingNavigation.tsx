@@ -6,7 +6,7 @@ import Button from "../../UI/Button/Button";
 import CustomNavLink from "../../UI/CustomNavLink";
 import classes from "./LandingHeader.module.css";
 import Link from "next/link";
-import logo from "../../../public/images/logo.png";
+import logo from "../../../public/images/logo.jpg";
 const LandingNavigation: React.FC = () => {
   const router = useRouter();
   return (
