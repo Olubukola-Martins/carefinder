@@ -234,7 +234,7 @@ const AddHospitalForm = () => {
                   : false
               }
               type="text"
-              placeholder="e.g., +2348167698854"
+              placeholder="e.g., +2348030000000"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.phoneNumber}

@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
           CareFinder
         </h1>
         <div className="text-2xl text-tertiary_light_color font-normal">
-          <p>No 35 Kinshasha Street</p>
-          <p className="my-4">Wuse Zone 6, Abuja.</p>
-          <p>+2348167698854</p>
+          <p>Kinshasha Street</p>
+          <p className="my-4">Abuja, Nigeria.</p>
+          <p>+2348030000000</p>
         </div>
       </div>
       <div className="text-2xl text-tertiary_light_color font-normal flex flex-col">
