@@ -13,7 +13,7 @@ Export Hospitals: Users can export the list of hospitals to a CSV file for easy 
 
 Share Hospitals: The platform allows users to share the list of hospitals via email or by generating a shareable link.
 
-User Authentication: Admin users can create an account to access the platform's admin features. User authentication is implemented using Firebase's authentication feature, supporting multiple authentication methods.
+User Authentication: CareFinder utilizes NextAuth library for user authentication. It provides a secure login system, allowing admin users to create an account and access the admin features of CareFinder.
 ![a1](https://github.com/Jennydunix/carefinder/assets/88034429/00b810ea-6d49-4f64-a3ad-40853c8a71cf)
 
 
@@ -34,7 +34,7 @@ To run Carefinder locally, follow these steps:
 
 1. Clone the repository: git clone https://github.com/your-username/carefinder.git
 2. Install dependencies: npm install
-3. Set up Firebase project:
+3. Set up the Firebase project:
 4. Create a new Firebase project on the Firebase Console.
 5. Set up Firebase Authentication and Firestore database.
 6. Obtain the Firebase configuration details.
@@ -57,5 +57,5 @@ Deploy the project: vercel
 Follow the prompts from the CLI to configure the deployment settings.
 Once the deployment is complete, you will receive a URL where your Carefinder application is hosted.
 
-Here's the link to hosted application on vercel: https://carefinder-zeta.vercel.app/
+Here's the link to the hosted application on vercel: https://carefinder-zeta.vercel.app/
 
