@@ -25,7 +25,7 @@ Markdown Support: Admin users can write content using markdown syntax, enabling 
 ## Technologies Used
 
 Frontend: React, TypeScript
-Backend: Firebase (for authentication), MongoDB (for database, and file storage)
+Backend: Firebase, MongoDB (for database, and file storage), NextAuth Library(Authentication)
 Additional Tools: Prettier, ESLint, Jest, React Testing Library
 
 ## Installation
@@ -46,6 +46,7 @@ To run Carefinder locally, follow these steps:
 12. Fill in the required environment variables, including Firebase and MongoDB configuration details.
 13. Start the development server: npm run dev
 
+BaseUrl : http://localhost:3000
 ## Deployment
 Carefinder can be easily deployed to Vercel. To deploy the project, follow these steps:
 
