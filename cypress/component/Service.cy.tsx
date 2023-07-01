@@ -1,5 +1,5 @@
 import React from "react";
-import Service from "@/components/LandingPage/Services/Service";
+import Service from "@/components/LandingPage/PageServices/Service";
 
 describe("Service Component", () => {
   beforeEach(() => {

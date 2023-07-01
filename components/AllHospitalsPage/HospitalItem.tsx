@@ -4,7 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import classes from "./HospitalItem.module.css";
 import React, { useContext } from "react";
-import { AppContext } from "@/store/AppContext";
+import { AppContext } from "@/app_store/AppContext";
 
 interface HospitalItemProps {
   imgUrl: string | "";

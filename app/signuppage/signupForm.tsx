@@ -9,7 +9,7 @@ import SelectInput from "@/components/UI/SelectInput/SelectInput";
 import classes from "./signupForm.module.css";
 import { useRouter } from "next/navigation";
 import { showToastMessage } from "../login/loginForm";
-import { generateUniqueIdentifier } from "@/library/generateUniqueIdentifier";
+import { generateUniqueIdentifier } from "@/app_library/uniqueIdentifiergenerator";
 
 export interface UserData {
   firstName: string;

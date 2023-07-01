@@ -1,5 +1,5 @@
 import { Hospitalparams } from "@/app/home/addHospital/page";
-import { connectToDatabase } from "@/library/db";
+import { connectToDatabase } from "@/app_library/db";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {

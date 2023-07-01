@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HospitalItem from "./HospitalItem";
-import Pagination from "../Pagination/Pagination";
+import Pagination from "../PaginationPage/Pagination";
 import { Hospitalparams } from "@/app/home/addHospital/page";
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 

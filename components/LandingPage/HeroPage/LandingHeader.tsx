@@ -38,7 +38,7 @@ const LandingHeader = () => {
         </div>
         <figure className={classes.right}>
           <Image
-            src="/images/landingHeaderImg.png"
+            src="/images/hero.png"
             alt="Header Image"
             width={700}
             height={700}

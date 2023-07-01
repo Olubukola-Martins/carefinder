@@ -8,7 +8,7 @@ import Input from "./LoginInput";
 import LoadingSpinner from "./LoadingSpinner/LoadingSpinner";
 import Button from "@/components/UI/Button/Button";
 import { useRouter } from "next/navigation";
-import { AppContext } from "@/store/AppContext";
+import { AppContext } from "@/app_store/AppContext";
 import classes from "./LoginForm.module.css";
 
 // Tostify handler

@@ -1,4 +1,4 @@
-import { connectToDatabase } from "@/library/db";
+import { connectToDatabase } from "@/app_library/db";
 import { Hospitalparams } from "@/app/home/addHospital/page";
 import { NextResponse } from "next/server";
 

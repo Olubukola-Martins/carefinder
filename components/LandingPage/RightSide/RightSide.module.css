@@ -1,34 +1,19 @@
-.leftaligned {
-  padding: 0 8rem;
+.rightside {
+  margin-top: 3rem;
+  background-color: var(--secondary-light-color);
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  padding: 6rem 8rem;
   font-style: normal;
-  list-style: none;
   text-align: left;
   color: rgba(var(--secondary-color), 0.5);
 }
-.left {
-  flex-basis: 45%;
-}
-.h1 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 3.2rem;
-  color: #225ad6;
-  margin: 4rem 0 8rem;
-}
 
-.h1::after {
-  display: block;
-  content: "";
-  background-color: #2929292c;
-  margin: 0.8rem auto 0;
-  height: 0.05rem;
-  width: 67.7rem;
+.right {
+  flex-basis: 47%;
 }
-
 .h2 {
   font-weight: 600;
   font-size: 3.5rem;
@@ -46,6 +31,17 @@
   margin: 2rem 0 3rem;
 }
 
+.left {
+  flex-basis: 40%;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
 .button {
   width: fit-content;
   letter-spacing: 0.1rem;
@@ -61,74 +57,54 @@
   background: var(--primary-light-color);
 }
 
-.right {
-  flex-basis: 40%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.img {
-  height: 50%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 0.8rem;
-}
-
 @media only screen and (max-width: 900px) {
-  .leftaligned {
-    flex-direction: column;
+  .rightside {
+    flex-direction: column-reverse;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 4rem 6rem;
   }
 
   .right {
-    text-align: center;
     width: 100%;
+    margin-bottom: 2rem;
   }
 
   .left {
-    width: 80%;
-    margin: 0 auto 3rem;
+    width: 100%;
     text-align: center;
   }
-  .h1 {
-    margin: 3rem 1rem 1rem;
-    font-size: 3.2rem;
-    text-align: center;
+  .button {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
   }
-  .right {
-    padding: 2rem;
-  }
-
   .h2 {
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 3.5rem;
   }
 
   .p {
     font-size: 1.8rem;
+    line-height: 2.5rem;
     text-align: center;
   }
   .img {
-    height: 60%;
+    height: 70%;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .leftaligned {
+  .rightside {
+    text-align: center;
     padding: 4rem 2rem;
   }
-  .left {
+  .right {
     width: 100%;
     text-align: center;
   }
-
   .h2 {
     font-size: 2.5rem;
   }
 
   .p {
     font-size: 1.8rem;
-    text-align: center;
   }
 }

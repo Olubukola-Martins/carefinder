@@ -8,7 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 // import { AiFillTwitterCircle } from "react-icons/ai";
 import { useRouter } from "next/navigation";
 import { signIn, useSession } from "next-auth/react";
-import { AppContext } from "@/store/AppContext";
+import { AppContext } from "@/app_store/AppContext";
 import classes from "./Login.module.css";
 
 const Login = () => {

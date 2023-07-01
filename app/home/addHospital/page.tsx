@@ -7,17 +7,17 @@ import Input from "@/app/login/LoginInput";
 import classes from "./addHospital.module.css";
 import Button from "@/components/UI/Button/Button";
 import LoadingSpinner from "@/app/login/LoadingSpinner/LoadingSpinner";
-import TextEditor from "@/components/TextEditor/TextEditor";
+import TextEditor from "@/components/TextEditorPage/TextEditor";
 import {
   generateCountryForSelectField,
   generateLgasForSelectField,
   generateStatesForSelectField,
-} from "@/library/generators";
+} from "@/app_library/generators";
 import { useRouter } from "next/navigation";
 import { ToastContainer } from "react-toastify";
-import { storage } from "@/config";
+import { storage } from "@/configpage";
 import { ref, getDownloadURL, uploadBytesResumable } from "firebase/storage";
-import { generateUniqueIdentifier } from "@/library/generateUniqueIdentifier";
+import { generateUniqueIdentifier } from "@/app_library/uniqueIdentifiergenerator";
 import { showToastMessage } from "@/app/login/loginForm";
 
 export interface Hospitalparams {
@@ -159,7 +159,6 @@ const AddHospitalForm = () => {
     },
   });
 
-  ////////// Options for the select field ///////////
   // All avalable lgas for the selected state
   const [lgasOptions, setLgasOptions] = useState<
     { value: string; label: string }[]

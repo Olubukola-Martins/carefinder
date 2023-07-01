@@ -1,6 +1,6 @@
-import { UserData } from "@/app/signup/signupForm";
-import { connectToDatabase } from "@/library/db";
-import { hashPassword } from "@/library/auth";
+import { UserData } from "@/app/signuppage/signupForm";
+import { connectToDatabase } from "@/app_library/db";
+import { hashPassword } from "@/app_library/auth";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {

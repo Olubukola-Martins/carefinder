@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MdOutlineAdd, MdAccountCircle } from "react-icons/md";
 import Image from "next/image";
 import React, { useContext } from "react";
-import { AppContext } from "@/store/AppContext";
+import { AppContext } from "@/app_store/AppContext";
 import { signOut, useSession } from "next-auth/react";
 import Button from "../UI/Button/Button";
 import logo from "../../public/images/logo.jpg"

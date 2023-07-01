@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { SessionProvider } from "next-auth/react";
-import AppContextProvider from "@/store/AppContext";
+import AppContextProvider from "@/app_store/AppContext";
 import "@/stylesheets/main.scss";
 
 // The layout file by default receives other files as children.

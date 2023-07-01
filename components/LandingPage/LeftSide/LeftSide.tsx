@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import classes from "./LeftAligned.module.css";
+import classes from "./LeftSide.module.css";
 import Button from "../../UI/Button/Button";
 
-const LeftAligned = () => {
+const LeftSide = () => {
   const scrollHandler = () => {
     const section = document.querySelector("#services") as HTMLElement;
     section.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -13,7 +13,7 @@ const LeftAligned = () => {
       <h1 className={classes.h1}>
         Make a lasting impact on the future of your health
       </h1>
-      <li className={classes.leftaligned}>
+      <li className={classes.leftside}>
         <div className={classes.left}>
           <h2 className={classes.h2}>Welcome to CareFinder</h2>
           <p className={classes.p}>
@@ -35,14 +35,14 @@ const LeftAligned = () => {
         </div>
         <figure className={classes.right}>
           <Image
-            src="/images/2.png"
+            src="/images/patient.png"
             width={150}
             height={400}
             alt="carefinder"
             style={{ marginBottom: "3rem" }}
           />{" "}
           <Image
-            src="/images/1.png"
+            src="/images/doctor.png"
             width={150}
             height={400}
             alt="carefinder"
@@ -53,4 +53,4 @@ const LeftAligned = () => {
     </section>
   );
 };
-export default LeftAligned;
+export default LeftSide;

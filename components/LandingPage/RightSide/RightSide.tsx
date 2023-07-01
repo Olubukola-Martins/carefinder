@@ -1,19 +1,19 @@
 import React from "react";
-import classes from "./RightAligned.module.css";
+import classes from "./RightSide.module.css";
 import Button from "../../UI/Button/Button";
 import { useRouter } from "next/navigation";
 import logo from "../../../public/images/logo.jpg";
 import Image from "next/image";
 
 
-const RightAligned = () => {
+const RightSide = () => {
   const router = useRouter();
 
   const navigateHandler = () => {
     router.push("/about");
   };
   return (
-    <li className={classes.rightaligned} id="right__aligned">
+    <li className={classes.rightside} id="right__side">
       <figure className={classes.left}>
         <Image
           src={logo}
@@ -40,4 +40,4 @@ const RightAligned = () => {
     </li>
   );
 };
-export default RightAligned;
+export default RightSide;

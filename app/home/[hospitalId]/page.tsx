@@ -1,13 +1,13 @@
 "use client";
 import React, { useContext, useState } from "react";
-import { AppContext } from "@/store/AppContext";
+import { AppContext } from "@/app_store/AppContext";
 import Image from "next/image";
 import { FaShareAlt, FaDownload } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import LoadingSpinner from "@/app/login/LoadingSpinner/LoadingSpinner";
 import { showToastMessage } from "@/app/login/loginForm";
-import { downloadCSV, shareCSVByEmail } from "@/library/shareFIle";
+import { downloadCSV, shareCSVByEmail } from "@/app_library/shareFIle";
 import { usePathname, useRouter } from "next/navigation";
 import classes from "./hospitalDetail.module.css";
 import { ToastContainer } from "react-toastify";

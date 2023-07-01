@@ -2,8 +2,8 @@ import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
 import FacebookProvider from "next-auth/providers/facebook";
-import { connectToDatabase } from "../../../../library/db";
-import { verifyPassword } from "../../../../library/auth";
+import { connectToDatabase } from "../../../../app_library/db";
+import { verifyPassword } from "../../../../app_library/auth";
 
 const options = {
   session: { strategy: "jwt" },

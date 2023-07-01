@@ -6,9 +6,9 @@ import {
   generateCountryForSelectField,
   generateLgasForSelectField,
   generateStatesForSelectField,
-} from "@/library/generators";
-import { generateUniqueIdentifier } from "@/library/generateUniqueIdentifier";
-import { AppContext } from "@/store/AppContext";
+} from "@/app_library/generators";
+import { generateUniqueIdentifier } from "@/app_library/uniqueIdentifiergenerator";
+import { AppContext } from "@/app_store/AppContext";
 import { Hospitalparams } from "@/app/home/addHospital/page";
 
 export interface HospitalData {

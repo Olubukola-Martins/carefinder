@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import { generatePagination } from "@/library/generatePagination";
+import { generatePagination } from "@/app_library/paginationgenerator";
 
 interface PaginationProps {
   itemsPerPage: number;

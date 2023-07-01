@@ -2,13 +2,13 @@
 "use client";
 import React, { useContext, useState } from "react";
 import { MdFileDownload, MdShare } from "react-icons/md";
-import { AppContext } from "@/store/AppContext";
+import { AppContext } from "@/app_store/AppContext";
 import { ToastContainer } from "react-toastify";
 import { showToastMessage } from "../login/loginForm";
 import LoadingSpinner from "../login/LoadingSpinner/LoadingSpinner";
-import SearchHospitalForm from "@/components/AllHospitals/SearchHospitalsForm";
-import { downloadCSV, shareCSVByEmail } from "@/library/shareFIle";
-import AllHospitals from "@/components/AllHospitals/AllHospitals";
+import SearchHospitalForm from "@/components/AllHospitalsPage/SearchHospitalsForm";
+import { downloadCSV, shareCSVByEmail } from "@/app_library/shareFIle";
+import AllHospitals from "@/components/AllHospitalsPage/AllHospitals";
 import { useSession } from "next-auth/react";
 
 const fetchHospitals = async (country: string) => {
