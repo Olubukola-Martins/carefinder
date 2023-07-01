@@ -2,7 +2,7 @@ import LeftSide from "./LeftSide/LeftSide";
 import RightAligned from "./RightSide/RightSide";
 import Services from "./PageServices/Services";
 import React from "react";
-import LandingHeader from "./HeroPage/LandingHeader";
+import LandingHeader from "./LandingHeader/LandingHeader";
 import Footer from "../FooterPage/Footer";
 import Testimonials from "./PageTestimonials/Testimonials";
 import classes from "./LandingPage.module.css";
