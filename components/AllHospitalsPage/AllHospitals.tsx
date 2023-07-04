@@ -48,8 +48,8 @@ const AllHospitals: React.FC<AllHospitalsProps> = ({
       <div className="w-[100%] mx-auto">
         {allHospitals?.length > 0 && (
           <Pagination
-            // itemsPerPage={hospitalsPerPage}
-            // totalItems={allHospitals.length}
+            itemsPerPage={hospitalsPerPage}
+            totalItems={allHospitals.length}
             onChange={changePageHandler}
           />
         )}
