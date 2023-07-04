@@ -18,11 +18,11 @@
   text-align: center;
   letter-spacing: 0.2rem;
 }
-.h1::after {
+/* .h1::after {
   content: " ";
   display: block;
   width: 6rem;
   height: 5px;
   background-color: var(--primary-dark-color);
   margin: 1rem auto 4rem auto;
-}
+} */
